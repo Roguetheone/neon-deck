@@ -328,7 +328,7 @@ h3 { font-size: 18px; letter-spacing: -0.01em; }
 
   /* Header: logo, button, menu toggle; links drop down under the bar. */
   .header-row { gap: 12px; height: 60px; }
-  .header-row .soon-sm { margin-left: auto; }
+  .header-row .btn { margin-left: auto; }
   .menu-toggle { display: block; order: 3; }
   .nav {
     position: absolute;
@@ -374,8 +374,7 @@ h3 { font-size: 18px; letter-spacing: -0.01em; }
 @media (max-width: 560px) {
   :root { --cut: 8px; }
   .wrap { width: min(var(--wrap), 100% - 32px); }
-  .header-row .soon-sm { padding: 0 12px; }
-  .hero-actions .soon { flex: 1 1 100%; justify-content: center; }
+  .header-row .btn { padding: 0 12px; font-size: 13px; }
 
   .hero { padding: 48px 0 56px; }
   .hero-actions .btn { flex: 1 1 100%; justify-content: center; }
@@ -406,32 +405,3 @@ h3 { font-size: 18px; letter-spacing: -0.01em; }
 .not-found .eyebrow { margin: 0; }
 .not-found h1 { font-size: clamp(30px, 4vw, 40px); }
 .not-found p:not(.eyebrow) { margin: 0 0 20px; color: var(--text-dim); }
-
-/* ---------- "Coming soon" badge (until the store listing is live) ---------- */
-.soon {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  height: 46px;
-  padding: 0 20px;
-  border: 1px solid var(--line-strong);
-  border-radius: var(--radius);
-  background: var(--bg-1);
-  color: var(--text);
-  font-size: 15px;
-  font-weight: 500;
-  white-space: nowrap;
-}
-.soon i {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 0 rgb(255 42 85 / 0.5);
-  animation: soon-pulse 2.4s var(--ease) infinite;
-}
-.soon-sm { height: 36px; padding: 0 14px; font-size: 13px; color: var(--text-dim); }
-@keyframes soon-pulse {
-  0% { box-shadow: 0 0 0 0 rgb(255 42 85 / 0.5); }
-  70%, 100% { box-shadow: 0 0 0 7px rgb(255 42 85 / 0); }
-}
