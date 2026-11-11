@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — Neon Deck</title>
+    <meta name="description" content="How the Neon Deck Chrome extension handles your data." />
+    <link rel="icon" href="assets/logo-small.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="theme-color" content="#0b0b0e" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="apple-touch-icon" href="assets/icon-128.png" />
+    <link rel="canonical" href="https://roguetheone.github.io/neon-deck/privacy.html" />
+    <meta property="og:url" content="https://roguetheone.github.io/neon-deck/privacy.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Neon Deck" />
+    <meta property="og:title" content="Privacy Policy — Neon Deck" />
+    <meta property="og:description" content="How the Neon Deck Chrome extension handles your data." />
+    <meta property="og:image" content="https://roguetheone.github.io/neon-deck/assets/og-image.png" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="560" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script src="site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-row">
+        <a class="brand" href="index.html" aria-label="Neon Deck home">
+          <img src="assets/logo-small.svg" alt="" width="28" height="28" />
+          <span>Neon Deck</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Main">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#screenshots">Screenshots</a>
+          <a href="index.html#privacy" aria-current="page">Privacy</a>
+          <a href="index.html#faq">FAQ</a>
+        </nav>
+        <!-- W5: becomes the "Add to Chrome" store link -->
+        <span class="soon soon-sm"><i aria-hidden="true"></i>Coming soon</span>
+      </div>
+    </header>
+
+    <main class="doc" id="content">
+      <div class="wrap doc-wrap">
+        <a class="back-link" href="index.html">← Back to Neon Deck</a>
+        <p class="eyebrow">Legal</p>
+        <h1>Privacy Policy</h1>
+        <p class="doc-meta">Effective 11 November 2026 · applies to the Neon Deck extension for Google Chrome, version 1.0.0 and later.</p>
+
+
+      <div class="summary">
+        <p><strong>In short:</strong> Neon Deck has no servers, no account, no ads and no analytics. Everything you set up stays in your own browser and, if you use it, in your own Chrome sync. The developer never receives your data.</p>
+      </div>
+
+      <h2>What Neon Deck stores</h2>
+      <p>Neon Deck keeps its data with Chrome's built-in extension storage:</p>
+      <ul>
+        <li><strong>In Chrome sync</strong> (<code>chrome.storage.sync</code>): your settings, speed dial sites (name and address), tasks, focus timer settings and tab sleep rules. If you are signed in to Chrome with sync on, Google's Chrome sync copies this data to your other computers, under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. Without sync, it stays on this computer.</li>
+        <li><strong>On this computer only</strong> (<code>chrome.storage.local</code>): pictures you upload for tiles or as a wallpaper, preview images found for your sites, and the state of a running timer.</li>
+      </ul>
+      <p>Neon Deck does not read your browsing history, bookmarks, passwords or the content of the pages you visit.</p>
+
+      <h2>Network requests</h2>
+      <p>Neon Deck itself sends nothing to the developer. It only makes these requests, all needed for features you use:</p>
+      <ul>
+        <li><strong>Sites you add to the speed dial.</strong> If you allow it, Neon Deck loads that site's start page once to find its preview image (the <code>og:image</code> tag), icon and colour, and then loads that image. Chrome asks you for access to each site separately. The request carries no cookies.</li>
+        <li><strong>Google apps menu.</strong> The icons in this menu load from Google's servers (<code>www.google.com</code> and <code>ssl.gstatic.com</code>). Only fixed icon addresses are requested; nothing about you is added to them.</li>
+        <li><strong>Search.</strong> The search box hands your query to the search engine you chose in Chrome, the same as typing it in the address bar.</li>
+      </ul>
+
+      <h2>Permissions</h2>
+      <ul>
+        <li><code>storage</code> saves the data described above.</li>
+        <li><code>favicon</code> shows the site icons Chrome already has.</li>
+        <li><code>search</code> runs searches with your chosen search engine.</li>
+        <li><code>alarms</code> ends timer periods on time and runs auto-sleep once a minute, only while you have it on.</li>
+        <li><code>activeTab</code> lets the toolbar panel read the address of the current tab when you open it, to offer "Never sleep this site".</li>
+        <li><code>offscreen</code> plays the timer sound.</li>
+        <li><code>notifications</code> is optional and asked for only when you turn on timer notifications.</li>
+        <li>Access to individual websites is optional and asked for site by site, only for the speed dial preview images and the never-sleep list.</li>
+      </ul>
+
+      <h2>What Neon Deck does not do</h2>
+      <ul>
+        <li>No selling, renting or sharing of your data.</li>
+        <li>No advertising, tracking, analytics or crash reporting.</li>
+        <li>No remote code: everything the extension runs ships inside it.</li>
+        <li>No use of your data for anything other than the features above.</li>
+      </ul>
+
+      <h2>Your control</h2>
+      <ul>
+        <li>Settings › Backup lets you download all of Neon Deck's data as a file, restore it, or <strong>reset everything</strong>.</li>
+        <li>You can withdraw site access at any time in <code>chrome://extensions</code> › Neon Deck › Details › Site access.</li>
+        <li>Removing the extension deletes all of its local data. Data in Chrome sync is removed by the reset, or by clearing extension data in your Google Account's Chrome sync settings.</li>
+      </ul>
+
+      <h2>Children</h2>
+      <p>Neon Deck is a general-purpose tool and does not knowingly collect any data from anyone, including children.</p>
+
+      <h2>Changes</h2>
+      <p>If this policy changes, the new version will be published on this page with a new effective date. Changes that affect how data is handled will also be noted in the extension's release notes.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about privacy: <a href="mailto:neondeck@seznam.cz">neondeck@seznam.cz</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-row">
+        <div class="brand brand-muted">
+          <img src="assets/logo-small.svg" alt="" width="20" height="20" />
+          <span>Neon Deck</span>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="privacy.html" aria-current="page">Privacy Policy</a>
+          <a href="index.html#faq">FAQ</a>
+        </nav>
+        <p class="footer-note">
+          © 2026 Neon Deck. An independent project, not affiliated with any browser maker.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
